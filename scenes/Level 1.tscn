@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://svedqu2f8vov"]
+
+[ext_resource type="PackedScene" uid="uid://dtw3aurq831p3" path="res://scenes/Player 2.tscn" id="1_oa3t4"]
+[ext_resource type="PackedScene" uid="uid://bc2gcx6oc17c2" path="res://scenes/World 1.tscn" id="2_e4fmc"]
+[ext_resource type="PackedScene" uid="uid://brj2qlqpt380e" path="res://scenes/ObjLamp.tscn" id="3_cbhq1"]
+
+[node name="Level 1" type="Node3D"]
+
+[node name="Player2" parent="." instance=ExtResource("1_oa3t4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.31641, 0)
+
+[node name="World 1" parent="." instance=ExtResource("2_e4fmc")]
+
+[node name="ObjLamp" parent="." instance=ExtResource("3_cbhq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.18119, -4.79535, 16.6786)
+
+[node name="ObjLamp2" parent="." instance=ExtResource("3_cbhq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5766, -4.79535, 3.97097)
+
+[node name="ObjLamp8" parent="." instance=ExtResource("3_cbhq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.56237, -4.79535, -32.6343)
+
+[node name="ObjLamp3" parent="." instance=ExtResource("3_cbhq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.6172, -4.79535, 58.6786)
+
+[node name="ObjLamp4" parent="." instance=ExtResource("3_cbhq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6789, -4.79535, 41.3586)
+
+[node name="ObjLamp9" parent="." instance=ExtResource("3_cbhq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.64337, -4.79535, 58.8526)
+
+[node name="ObjLamp5" parent="." instance=ExtResource("3_cbhq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.6891, -4.79535, 23.6795)
+
+[node name="ObjLamp6" parent="." instance=ExtResource("3_cbhq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.9066, -4.79535, 39.3739)
+
+[node name="ObjLamp7" parent="." instance=ExtResource("3_cbhq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.1132, -4.79535, -26.3801)

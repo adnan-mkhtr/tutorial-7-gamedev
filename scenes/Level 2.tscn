@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlhihviqsurv4"]
+
+[ext_resource type="PackedScene" uid="uid://dtw3aurq831p3" path="res://scenes/Player 2.tscn" id="1_nsetg"]
+[ext_resource type="PackedScene" uid="uid://2f3u2mopclop" path="res://scenes/World 2.tscn" id="2_udkpw"]
+[ext_resource type="PackedScene" uid="uid://brj2qlqpt380e" path="res://scenes/ObjLamp.tscn" id="3_32udc"]
+
+[node name="Level 2" type="Node3D"]
+
+[node name="Player2" parent="." instance=ExtResource("1_nsetg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.31641, 0)
+
+[node name="World 2" parent="." instance=ExtResource("2_udkpw")]
+
+[node name="ObjLamp" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.18119, -4.79535, 16.6786)
+
+[node name="ObjLamp2" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5766, -4.79535, 3.97097)
+
+[node name="ObjLamp8" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.56237, -4.79535, -32.6343)
+
+[node name="ObjLamp3" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.6172, -4.79535, 58.6786)
+
+[node name="ObjLamp4" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6789, -4.79535, 41.3586)
+
+[node name="ObjLamp9" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.64337, -4.79535, 58.8526)
+
+[node name="ObjLamp5" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.6891, -4.79535, 23.6795)
+
+[node name="ObjLamp6" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.9066, -4.79535, 39.3739)
+
+[node name="ObjLamp7" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.1132, -4.79535, -26.3801)
+
+[node name="ObjLamp10" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.565, -4.79535, -26.3801)
+
+[node name="ObjLamp11" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.565, -4.79535, -9.52817)
+
+[node name="ObjLamp12" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.2179, -4.79535, -9.52817)
+
+[node name="ObjLamp13" parent="." instance=ExtResource("3_32udc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.8698, -4.79535, -26.4622)

@@ -1,6 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://65h4c0mrp6k7"]
+[gd_scene load_steps=11 format=3 uid="uid://65h4c0mrp6k7"]
 
 [ext_resource type="PackedScene" path="res://Scenes/Box.tscn" id="1"]
+[ext_resource type="Script" path="res://scripts/Switch.gd" id="2_4njp0"]
+[ext_resource type="PackedScene" uid="uid://dj4iqo6svt3ss" path="res://scenes/Area3D.tscn" id="4_ullim"]
+[ext_resource type="PackedScene" uid="uid://dtw3aurq831p3" path="res://scenes/Player 2.tscn" id="5_1n262"]
 
 [sub_resource type="StandardMaterial3D" id="3"]
 albedo_color = Color(0.498039, 0.498039, 0.498039, 1)
@@ -21,6 +24,8 @@ material = SubResource("6")
 [sub_resource type="BoxShape3D" id="5"]
 
 [node name="Level" type="Node3D"]
+
+[node name="Player2" parent="." instance=ExtResource("5_1n262")]
 
 [node name="Ground" type="MeshInstance3D" parent="."]
 mesh = SubResource("1")
@@ -67,6 +72,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 25.0375)
 mesh = SubResource("4")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Switch"]
+script = ExtResource("2_4njp0")
+light = NodePath("../../OmniLight3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Switch/StaticBody3D"]
 shape = SubResource("5")
+
+[node name="Area3D" parent="." instance=ExtResource("4_ullim")]
+transform = Transform3D(1.5, 0, 0, 0, 2.925, 0, 0, 0, 3.042, -22.0738, 1.2484, 23.303)
+visible = false
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.41, 2.068, 13.616)
+size = Vector3(2.83014, 4.11633, 2.28526)
+
+[node name="Area3D" parent="CSGBox3D4" instance=ExtResource("4_ullim")]
+transform = Transform3D(0.990629, 0, 0.0955226, 0, 4.73693, 0, -0.0353552, 0, 2.67648, -1.52766, 0.185987, 0.035862)
