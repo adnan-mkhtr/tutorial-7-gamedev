@@ -21,4 +21,4 @@
 2. **Membuat Level baru yaitu Level 2**
    - Buat scene baru atau duplicate scene Level 1.
    - Kemudian ubah nama scene tersebut menjadi Level 2.
-   - Ubah scene World 1 menjadi World 2 dan ubah isi dalam scene tersebut sesuai keinginan agar berbeda dengan scene Level 1
+   - Ubah scene World 1 menjadi World 2 dan ubah isi dalam scene tersebut sesuai keinginan agar berbeda dengan scene Level 1.
